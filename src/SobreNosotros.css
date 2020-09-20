@@ -1,0 +1,28 @@
+.sobreNosotros{
+    min-height: 800px;
+    background-image:url('https://i.pinimg.com/originals/a4/01/af/a401af4a6f946c159e7cf145f7e0d71f.jpg');
+}
+
+.MuiContainer-root{
+    padding-top:40px;
+}
+
+.sobreNosotros__titulo{
+    font-family: 'Berkshire Swash';
+    color:rgb(183, 199, 218);
+    text-shadow: 2px 1px #a1c974;
+    text-shadow: 6px 4px #a0319a;
+    font-size: 50px;
+}
+
+.sobreNosotros__descripcion{
+    color:white;
+}
+
+.sobreNosotros__img{
+    margin-top:80px;
+    max-width: 100%;
+    max-height: 80%;
+    display: block;
+    border: 10px solid rgb(78, 172, 196);
+}

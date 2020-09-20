@@ -1,0 +1,198 @@
+.header{
+    background-color: #383533;
+    display:flex;
+	align-items: center;
+    background-image:url('https://i.pinimg.com/originals/a4/01/af/a401af4a6f946c159e7cf145f7e0d71f.jpg');
+    /* barra nav fija en la parte superior*/
+    position: sticky;
+    top:0;
+    z-index: 100;
+    border-bottom: 1px solid;
+}
+
+.header__movil{
+	background-color: thistle;
+	height: 30px;
+}
+
+.header__logo{
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom:5px;
+}
+
+.header__optionBasket{
+    color:#33a088;
+    display:flex;
+    align-items: center;
+}
+
+.header__basketCount{
+    margin-right: 15px;
+    margin-left: 5px;
+}
+.header__optionBasket:hover{
+    color:#b941b9;
+}
+
+/* Common styles for all menus */
+
+.menu__list {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+    list-style: none;
+    text-align:center;
+	flex:1;
+	margin-left:15px;
+    
+}
+
+.menu__item {
+	display: block;
+    margin: 1em 0;
+    display:inline-block;
+    display:inline; 
+}
+
+.menu__link {
+	font-size: 1.05em;
+	font-weight: bold;
+	display: block;
+	padding: 1em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.menu__link:hover,
+.menu__link:focus {
+	outline: none;
+}
+
+
+.menu--antonio .menu__item {
+	position: relative;
+	
+}
+
+.menu--antonio .menu__link {
+	position: relative;
+	display: block;
+	min-width: 110px;
+	text-align: center;
+	color: #b5b5b5;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.menu--antonio .menu__link:hover,
+.menu--antonio .menu__link:focus {
+	color: #929292;
+}
+
+.menu--antonio .menu__item--current .menu__link {
+	color: #33a088;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+.menu--antonio .menu__item::before,
+.menu--antonio .menu__item::after,
+.menu--antonio .menu__link::before,
+.menu--antonio .menu__link::after {
+	content: '';
+	position: absolute;
+	background: #33a088;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+}
+
+.menu--antonio .menu__item::before,
+.menu--antonio .menu__item::after {
+	top: 0;
+	width: 4px;
+	height: 100%;
+	-webkit-transform: scale3d(1, 0, 1);
+	transform: scale3d(1, 0, 1);
+}
+
+.menu--antonio .menu__item::before {
+	left: 0;
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+
+.menu--antonio .menu__item::after {
+	right: 0;
+	-webkit-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+
+.menu--antonio .menu__link::before,
+.menu--antonio .menu__link::after {
+	left: 0;
+	width: 100%;
+	height: 4px;
+	-webkit-transform: scale3d(0, 1, 1);
+	transform: scale3d(0, 1, 1);
+}
+
+.menu--antonio .menu__link::before {
+	top: 0;
+	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+}
+
+.menu--antonio .menu__link::after {
+	bottom: 0;
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+}
+
+.menu--antonio .menu__item--current::before,
+.menu--antonio .menu__item--current::after,
+.menu--antonio .menu__item--current .menu__link::before,
+.menu--antonio .menu__item--current .menu__link::after {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+.menu--antonio .menu__item--current::after {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.menu--antonio .menu__item--current .menu__link::before {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.menu--antonio .menu__item--current .menu__link::after {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+@media screen and (max-width:55em) {
+	.menu__list {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+
