@@ -3,10 +3,7 @@ import './SobreNosotros.css';
 import Grid from "@material-ui/core/Grid";
 import { Container } from '@material-ui/core';
 import {useState, useEffect} from 'react';
-import {WhatsappShareButton} from 'react-share';
   
-
-
 function SobreNosotros() {
 
     useEffect(() => {
@@ -32,8 +29,6 @@ function SobreNosotros() {
                     </Grid>
                 </Grid>
             </Container>
-            
-           
         </div>
     )
 }

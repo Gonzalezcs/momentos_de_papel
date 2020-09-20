@@ -1,8 +1,5 @@
 import React from 'react'
 import GridProducts from './GridProducts';
-
-
-
 import AwesomeSlider from 'react-awesome-slider';
 import coreStyles from 'react-awesome-slider/src/core/styles.scss';
 import animationStyles from 'react-awesome-slider/src/styled/fall-animation/fall-animation.scss';

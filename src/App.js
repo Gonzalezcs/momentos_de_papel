@@ -5,10 +5,8 @@ import Header from './Header';
 import Home from './Home';
 import Productos from './Productos';
 import Producto from './Producto';
-import Ofertas from './Ofertas';
 import Footer from './Footer';
 import SobreNosotros from './SobreNosotros';
-import Contacto from './Contacto';
 
 function App() {
 
@@ -20,18 +18,6 @@ function App() {
           <Route path="/productos">
             <Header activo={"productos"}/>
             <Productos />
-            <Footer/>
-          </Route>
-
-          <Route path="/ofertas">
-            <Header activo={"ofertas"}/>
-            <Ofertas/>
-            <Footer/>
-          </Route>
-
-          <Route path="/contacto">
-            <Header activo={"contacto"} />
-            <Contacto />
             <Footer/>
           </Route>
 

@@ -4,7 +4,6 @@ import './demo.css';
 import './normalize.css';
 import { Link } from 'react-router-dom';
 import logo from './img/logo_blanco.png';
-import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import Hidden from '@material-ui/core/Hidden';
 import { slide as Menu } from 'react-burger-menu'
 import MenuIcon from '@material-ui/icons/Menu';

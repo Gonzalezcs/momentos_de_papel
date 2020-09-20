@@ -8,7 +8,6 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import {useState, useEffect} from 'react';
 import { useParams } from "react-router";
 import data from './api_json.json';
-import { colors } from '@material-ui/core';
 
 function Producto() {
 
