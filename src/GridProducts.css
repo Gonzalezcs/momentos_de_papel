@@ -21,11 +21,23 @@
 	position: relative;
 }
 
-.grid figure img {
-	max-width: 100%;
-	display: block;
-	position: relative;
+@media screen and (max-width: 550px) {
+	.gridproducts__img {
+		max-width: 85% ;
+		display: block;
+		position: relative;
+	}
 }
+
+@media screen and (min-width: 550px) {
+	.gridproducts__img {
+		max-width: 100%;
+		display: block;
+		position: relative;
+	}
+}
+
+
 
 .grid figcaption {
 	position: absolute;

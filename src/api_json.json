@@ -695,7 +695,7 @@
         },
         {
             "id_producto": 27,
-            "nombre": "De aqui a la luna",
+            "nombre": "De aquí a la luna",
             "precio": 22990,
             "largo": 12,
             "ancho": 10,
@@ -757,7 +757,7 @@
         },
         {
             "id_producto": 29,
-            "nombre": "Jesus el camino",
+            "nombre": "Jesús el camino",
             "precio": 22990,
             "largo": 20,
             "ancho": 12,

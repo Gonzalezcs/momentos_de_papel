@@ -49,15 +49,15 @@ function Producto() {
                       <h1>{producto_data.nombre}</h1>
                       <div className="producto__dimensiones">
                           <h3 className="producto__titulo">Dimensiones</h3>
-                          <span>Largo: {producto_data.largo} Centrimetros</span>
-                          <span>Ancho: {producto_data.ancho} Centrimetros</span>
+                          <span>Largo: {producto_data.largo} Centímetros</span>
+                          <span>Ancho: {producto_data.ancho} Centímetros</span>
                       </div>
                       <div className="producto__descripcion">
                         <span className="producto__titulo">Descripción</span>
                         <p>Estructura, páginas por ambos lados para rellenar, además de elementos decorativos, bolsillos y desplegables.</p>
                       </div>
                       <Button variant="contained">
-                          <WhatsAppIcon style={{ fontSize: 28,marginLeft: 1,marginBottom:5}} /> <a href={"https://api.whatsapp.com/send?phone=982858212&text=Deseo consultar por el album http://www.momentosdepapel.cl:3000/producto/"+producto_data.id_producto} style={{color:'#ffff'}}>Consultar por album</a>
+                          <WhatsAppIcon style={{ fontSize: 28,marginLeft: 1,marginBottom:5}} /> <a href={"https://api.whatsapp.com/send?phone=+56934085555&text=Deseo consultar por el álbum http://momentosdepapel.cl/producto/"+producto_data.id_producto} style={{color:'#ffff'}}>Consultar por álbum</a>
                       </Button>
                   </div>
                 </Grid>

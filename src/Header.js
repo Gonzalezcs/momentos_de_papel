@@ -7,9 +7,12 @@ import logo from './img/logo_blanco.png';
 import Hidden from '@material-ui/core/Hidden';
 import { slide as Menu } from 'react-burger-menu'
 import MenuIcon from '@material-ui/icons/Menu';
+import {useState, useEffect} from 'react';
 
 
 function Header({activo}) {
+
+    const [menuEstado, setMenuEstado] = useState(false);
 
     return (
         <div>
@@ -35,10 +38,10 @@ function Header({activo}) {
             <Hidden only={['sm', 'md', 'lg', 'xl']}>
                 <div className="header__movil"> 
                     <MenuIcon/>
-                    <Menu  isOpen={ false }>
-                        <a id="home" className="menu-item" href="/"> <Link  to="/" className="menu__link">Inicio</Link></a>
-                        <a id="about" className="menu-item" href="/about"><Link  to="/productos" className="menu__link">Productos</Link ></a>
-                        <a id="contact" className="menu-item" href="/contact"> <Link  to="/sobre-nosotros" className="menu__link">Sobre mi</Link></a>
+                    <Menu  isOpen={ menuEstado }>
+                        <a onClick={ () => setMenuEstado(!menuEstado) } id="home" className="menu-item" href="/">Inicio</a>
+                        <a onClick={ () => setMenuEstado(!menuEstado) } id="about" className="menu-item" href="/productos">Productos</a>
+                        <a onClick={ () => setMenuEstado(!menuEstado) } id="contact" className="menu-item" href="/sobre-nosotros">Sobre nosotros</a>
                     </Menu>
                 </div>
             </Hidden>

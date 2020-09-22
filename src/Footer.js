@@ -16,22 +16,19 @@ function Footer() {
                 <Grid item xs={12} sm={6}>
                     <div className="footer__acerca">
                         <h3>Acerca de</h3>
-                        <p>Momentosdepapel.cl Somos una tienda de scrap que busca adaptar cada diseño al gusto del cliente Por medio de material entretenido. 
-                            Personalizamos tu idea y creamos una gran historia a través de recortes y fotos.¡Tomamos tu ideas, personalizamos tu álbum y lo hacemos realidad !.
+                        <p>Momentosdepapel.cl Somos una tienda de Scrap que busca adaptar cada diseño de un álbum al gusto del cliente,
+                                por medio de una diversa gama de materiales y técnicas de Scrapbooking que te permitirán plasmar tus recuerdos de manera creativa, didáctica y entretenida.
                         </p>
                     </div>
                 </Grid>
                 <Grid item xs={12} sm={2}>
                     <div className="footer__categorias">
-                        <h3>Categorias</h3>
+                        <h3>Categorías</h3>
                         <ul>
                             <Link to="/productos">
                                 <li className="footer__categorias__ul__li">Productos</li>
                             </Link>
-                            <Link to="/productos">
-                                <li className="footer__categorias__ul__li">Contacto</li>
-                            </Link>
-                            <Link to="/productos">
+                            <Link to="/sobre-nosotros">
                                 <li className="footer__categorias__ul__li">Sobre Nosotros</li>
                             </Link> 
                         </ul>
@@ -41,7 +38,7 @@ function Footer() {
                 <div className="footer__contacto">
                     <h3>Contacto</h3>
                     <ul>
-                        <li>Correo: carolinajuica5@gmail.com</li>
+                        <li>Correo: momentosdepapel.c@gmail.com</li>
                         <li>Teléfono: +56 934085555</li>
                     </ul>
                 </div>
@@ -65,7 +62,7 @@ function Footer() {
                                     <InstagramIcon  style={{ color: deepOrange[500], fontSize: 30}}/>
                                 </a>
                             </li>
-                            <li><a href="https://wa.link/1zakf2" target="_blank">
+                            <li><a href="https://api.whatsapp.com/send?phone=+56934085555&text=Me gustarí­a saber más sobre esta tienda" target="_blank">
                                 <WhatsAppIcon style={{ color: green[500],fontSize: 30}} />
                                 </a>
                             </li>

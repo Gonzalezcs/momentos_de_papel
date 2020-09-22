@@ -9,7 +9,7 @@
 
 .producto__right{
     background-color: rgba(216, 218, 204, 0.137);
-    border: 1px solid rgb(132, 189, 162);
+    border: 8px solid rgb(184, 132, 189);
     border-radius: 10px;
     margin-right: 20px;
     padding: 20px;
@@ -71,3 +71,6 @@
     color:white;
     font-size: 14px;
 }
+
+
+

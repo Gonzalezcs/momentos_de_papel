@@ -3,6 +3,8 @@ import GridProducts from './GridProducts';
 import AwesomeSlider from 'react-awesome-slider';
 import coreStyles from 'react-awesome-slider/src/core/styles.scss';
 import animationStyles from 'react-awesome-slider/src/styled/fall-animation/fall-animation.scss';
+import Grid from "@material-ui/core/Grid";
+
 import './Home.css';
 
 function Home() {
@@ -21,7 +23,17 @@ function Home() {
             </AwesomeSlider>
             <p className="home__titulo">Destacados del Mes</p>
             <GridProducts/>
-        
+            <div style={{paddingBottom:20, marginTop:-70}}>
+                <Grid container justify = "center" >
+                    <h2 style={{color:'#ffff'}}>Un poco sobre lo que hacemos</h2>
+                </Grid>
+                <Grid container justify = "center" >
+                   
+                    <iframe width="760" height="400"
+                    src="https://www.youtube.com/embed/02G8JLqYZkg">
+                    </iframe> 
+                </Grid>
+            </div>
         </div>
     )
 }
