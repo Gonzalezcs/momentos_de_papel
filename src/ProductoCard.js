@@ -88,6 +88,9 @@ function ProductCard(producto) {
   return (
     <Card className={classes.root}>
       <CardActionArea>
+        {producto_data.vendido && (
+          <span className="producto__vendido">Vendido</span>
+        )}
         <CardMedia
           className={classes.media}
           image={image}
